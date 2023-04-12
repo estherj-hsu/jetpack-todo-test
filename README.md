@@ -1,3 +1,11 @@
+## Esther's Note
+
+ - Use [JSONPlaceholder](https://jsonplaceholder.typicode.com/) for API
+ - Fetch the first 10 items from the API onMount and add `completed`, `created_at`, and `updated_at`. By default, the first 3 items will be `completed: true`.
+
+------------------------------
+
+
 ## Description
 
 You are tasked with building a simple TODO application using Laravel, ReactJS (or Next.js), and Tailwind CSS.
