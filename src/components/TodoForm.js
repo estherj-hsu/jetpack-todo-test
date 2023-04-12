@@ -71,10 +71,10 @@ export default function TodoForm(props) {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div class="mb-5">
+        <div className="mb-5">
           <label
             for="title"
-            class="block mb-2 font-bold text-gray-600">Title</label>
+            className="block mb-2 font-bold text-gray-600">Title</label>
           <input
             required
             type="text"
@@ -82,12 +82,12 @@ export default function TodoForm(props) {
             name="title"
             value={title}
             onChange={e => setTitle(e.target.value)}
-            class="border border-gray-300 shadow p-3 w-full rounded mb-" />
+            className="border border-gray-300 shadow p-3 w-full rounded mb-" />
         </div>
-        <div class="mb-5">
+        <div className="mb-5">
           <label
             for="body"
-            class="block mb-2 font-bold text-gray-600">Description</label>
+            className="block mb-2 font-bold text-gray-600">Description</label>
           <textarea
             required
             rows={5}
@@ -95,13 +95,13 @@ export default function TodoForm(props) {
             name="body"
             value={body}
             onChange={e => setBody(e.target.value)}
-            class="border border-gray-300 shadow p-3 w-full rounded mb-" />
+            className="border border-gray-300 shadow p-3 w-full rounded mb-" />
         </div>
         <div className="mt-4 text-right">
           <button
             type="submit"
             disabled={isEmpty}
-            class={`rounded px-4 py-2 bg-${isEmpty ? 'gray' : 'blue'}-500 text-white ${isEmpty ? 'cursor-not-allowed' : 'hover:bg-blue-600'} duration-300`}>{isEditing ? 'Edit' : 'Create'}</button>
+            className={`rounded px-4 py-2 bg-${isEmpty ? 'gray' : 'blue'}-500 text-white ${isEmpty ? 'cursor-not-allowed' : 'hover:bg-blue-600'} duration-300`}>{isEditing ? 'Edit' : 'Create'}</button>
         </div>
       </form>
     </>
